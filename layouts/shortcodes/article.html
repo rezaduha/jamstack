@@ -1,0 +1,19 @@
+{{ $url := .Get "data" }} {{ $article := getJSON $url }} {{ range $article.data }}
+<article>
+  <div class="article-hero__container">
+    <img
+      src="{{ .attributes.image.data.attributes.url }}"
+      width="{{ .attributes.image.data.attributes.width }}"
+      height="{{ .attributes.image.data.attributes.height }}"
+      alt="{{ .attributes.title }} image"
+      class="article-hero__img"
+    />
+    <div class="article-hero__attr">
+      <h1 class="article-hero__title">{{ .attributes.title }}</h1>
+      <span class="article-hero__author">By {{ .attributes.author.data.attributes.name }}</span>
+      <span class="article-hero__timestamp">Published on {{ dateFormat "Jan 02, 2006" .attributes.createdAt }}</span>
+    </div>
+  </div>
+  <div class="article__content">{{ .attributes.content | markdownify }}</div>
+</article>
+{{ end }}

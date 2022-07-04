@@ -1,0 +1,32 @@
+<main>
+  {{ $url := .Get "data"}} {{ $topic := getJSON $url}} {{ range $topic.data }}
+  <div class="topic-hero__container">
+    <div class="topic-hero__container__color-panel" data-topic="{{ .attributes.name }}"></div>
+    <div class="topic-hero__header">
+      <span class="topic-hero__title">{{ .attributes.name }}</span>
+      <span class="topic-hero__desc">{{ .attributes.description}}</span>
+    </div>
+  </div>
+  <section class="articles-grid">
+    {{ range sort .attributes.articles.data "id" "desc"}}
+    <div class="card-article">
+      <a href="/article/{{ .attributes.slug }}" class="card-img__link">
+        <img
+          src="{{ .attributes.image.data.attributes.url }}"
+          width="{{ .attributes.image.data.attributes.width }}"
+          height="{{ .attributes.image.data.attributes.height }}"
+          alt="{{ .attributes.title }} image"
+          class="card-article__img"
+        />
+      </a>
+      <h1 class="card-article__title">
+        <a class="card-article__link" href="/article/{{ .attributes.slug }}">{{ .attributes.title }}</a>
+      </h1>
+      <p class="card-article__info">
+        <span>{{ .attributes.author.data.attributes.name }}</span> • <span>{{ dateFormat "Jan 02, 2006" .attributes.createdAt }}</span>
+      </p>
+    </div>
+    {{ end }}
+  </section>
+  {{ end }}
+</main>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Internet of Things (IoT) is a network of physical objects (devices, vehicles, buildings, etc.) embedded with electronics, software, sensors &amp; network connectivity that are designed to collect &amp; exchange data. Enterprises are adopting the IoT for the benefits offered, e.g., operations optimization, cost reduction &amp; improved efficiency." />
+    <title>Jamstack |  IoT Application Testing - Complexities &amp; Challenges</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+  <div class="logo"><a href="http://202.56.164.148:5002/">Jamstack</a></div>
+  <nav>
+    <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+       
+      <li><a href="/topic/news">News</a></li>
+      
+      <li><a href="/topic/education">Education</a></li>
+      
+      <li><a href="/topic/lifestyles">Lifestyles</a></li>
+      
+      <li><a href="/topic/technology">Technology</a></li>
+      
+      <li><a href="/topic/sports">Sports</a></li>
+      
+    </ul>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
+      <span class="sr-only">Menu</span>
+    </button>
+  </nav>
+</header>
+
+    <main>  
+<article>
+  <div class="article-hero__container">
+    <img
+      src="https://res.cloudinary.com/dyjp4hmcm/image/upload/v1653657848/motherboard_01476321_fabdc5f20e_81b8edd014.jpg"
+      width="1280"
+      height="959"
+      alt=" IoT Application Testing - Complexities &amp; Challenges image"
+      class="article-hero__img"
+    />
+    <div class="article-hero__attr">
+      <h1 class="article-hero__title"> IoT Application Testing - Complexities &amp; Challenges</h1>
+      <span class="article-hero__author">By Jason Adam Katzenstein</span>
+      <span class="article-hero__timestamp">Published on May 27, 2022</span>
+    </div>
+  </div>
+  <div class="article__content"><p>The Internet of Things (IoT) is a network of physical objects (devices, vehicles, buildings, etc.) embedded with electronics, software, sensors &amp; network connectivity that are designed to collect &amp; exchange data. Enterprises are adopting the IoT for the benefits offered, e.g., operations optimization, cost reduction &amp; improved efficiency.</p>
+<p>IoT development &amp; adoption are driven by multiple factors, including readily available low-cost sensors, increased bandwidth &amp; processing power, wide-spread usage of smartphones, availability of big data analysis tools &amp; scalability of IPV6. Organizations are also focusing on external benefits, such as: generating revenues from IoT-enabled products, services, &amp; customer experiences. The diagram to the left illustrates the interconnection among various subsystems in a typical IoT application.</p>
+<p>Unique Characteristics &amp; Requirements of IoT Systems Quality Assurance (QA) organizations are wise to view software testing beyond devices &amp; sensors. Huge volumes of data generated across a smart ecosystem add great technical complexity, demanding a holistic approach. IoT applications have several unique factors:</p>
+<ul>
+<li>
+<p>Combination of hardware, sensors, connectors, gateways, &amp; application software in a single system</p>
+</li>
+<li>
+<p>Real-time streaming analytics / complex event processing</p>
+</li>
+<li>
+<p>Support for data volume, velocity, variety, &amp; veracity</p>
+</li>
+<li>
+<p>Visualization of large-scale data</p>
+</li>
+</ul>
+<p><strong>Testing Challenges for IoT Applications Primary challenges:</strong></p>
+<ul>
+<li>
+<p><strong>Dynamic environment</strong>
+Unlike application testing in a defined environment, IoT solutions have a very dynamic environment with millions of sensors &amp; different devices used in conjunction with intelligent software.
+Real-time complexity: IoT applications have multiple, real-time scenarios &amp; its use cases are extremely complex.</p>
+</li>
+<li>
+<p><strong>Scalability of system</strong>
+Creating a test environment to assess functionality, scalability &amp; reliability is challenging.</p>
+</li>
+</ul>
+<p><strong>Other operational challenges:</strong></p>
+<ul>
+<li>
+<p>Related subsystems &amp; components owned by third-party units</p>
+</li>
+<li>
+<p>Complex set of uses cases to create test cases &amp; data</p>
+</li>
+<li>
+<p>Hardware quality &amp; accuracy</p>
+</li>
+<li>
+<p>Security &amp; privacy issues</p>
+</li>
+<li>
+<p>Safety concerns</p>
+</li>
+</ul>
+<p>Addressing IoT Application Testing Complexities A comprehensive test plan strategy requires various types of testing, test lab setup, tools &amp; simulators to be deployed.Considering the difficulties in generating big data from the thing in a testing environment, it is crucial to evaluate data simulation &amp; virtualization techniques. Stubs can be considered as options during early stages while data recorders can serve as alternatives at later stages. Beyond test planning &amp; data simulation, metrics-driven, exhaustive test execution is performed to achieve a stable system. QA organizations can split IoT test areas into the two layers described below.</p>
+<p><strong>The Device Interaction Layer</strong></p>
+<p>This layer is where the software &amp; the hardware components of a real-time IoT environment interact. One typical example is a BLE device transmitting real-time data to a mobile device app. There is often a lot of interaction testing occurring on the functional side of QA. However, other types of testing could also be required in addition to typical software testing:</p>
+<ul>
+<li>
+<p><strong>Conformance with standards</strong>
+These are mostly device performance attributes specific to devices &amp; sensors. These attributes must be validated against the standards of the device &amp; its communications protocol. Hardware vendors perform most of these tests, but there could be certain domain or use-case requirements for an environment that was not tested.</p>
+</li>
+<li>
+<p><strong>Interoperability</strong>
+The ability of different devices to support the required functionality among themselves, other external devices &amp; implementations.</p>
+</li>
+<li>
+<p><strong>Security</strong> With billions of sensors being deployed, it’s crucial to tackle data privacy &amp; security concerns across the IoT ecosystem. The following are the different types of security testing requirements:</p>
+<ol>
+<li>Identity &amp; authentication</li>
+<li>Data protection</li>
+<li>Data encryption</li>
+<li>Storage data security in local machines &amp; in the cloud</li>
+</ol>
+</li>
+</ul>
+<p>The User Interaction Layer This layer is the touch point between the thing &amp; user. The success of the overall system depends on user receiving a seamless experience. Key tests in this layer include:</p>
+<ul>
+<li>
+<p><strong>Network capability &amp; device level tests</strong>
+The specific aspects of network communication &amp; connectivity are validated by simulating different network modes, as well as device level validation.</p>
+</li>
+<li>
+<p><strong>Usability &amp; user experience</strong>
+Usability &amp; user experience are important in terms of the real-time usability; it involves human / machine interaction &amp; the real-time experience the IoT system provides in a specific interaction.</p>
+</li>
+<li>
+<p><strong>The IoT services &amp; back-end IoT environment</strong>
+While integration testing of the interfaces is key, there is a complex data layer that comes into play.</p>
+</li>
+</ul>
+<p>Creating a QA environment to enable validation of such an interface means addressing the growing data volume challenges of the IoT deployment. The front-end validation environment can be realized by assembling data recorders &amp; simulators. The service &amp; data layer validations will involve complex simulation services, such as the generation of millions of sensor hits, machine learning algorithms &amp; the ability to generate time-boxed traffic.</p>
+<p>There are methods to create such an ecosystem, e.g., leveraging sandboxes of development services or creating mock environments using virtualization tools. However, numerous implementation synergies are required to establish a working set of environments for a thorough services &amp; back-end validation platform.</p>
+</div>
+</article>
+
+
+</main>
+    <footer>
+  <div class="footer__content">
+    <p>Jamstack</p>
+    <div class="footer__disclaimer">
+      <p>
+        This website was created only for research purposes to complete the researcher's (p.p. Reza Fauzi Zisiwa Duha) final project for the
+        Informatics study program at Immanuel Christian University. All information and sources, both articles and pictures on the website,
+        use free materials taken from third parties including&nbsp;
+        <a href="https://www.articlesfactory.com/">Articles Factory</a>,&nbsp; <a href="https://www.amazines.com/">Amazines</a>,&nbsp;
+        <a href="https://pixabay.com/">Pixabay</a>,&nbsp; <a href="https://www.pexels.com/">Pexels</a>&nbsp;and&nbsp;
+        <a href="https://unsplash.com/">Unsplash.</a>
+      </p>
+      <p>© Reza, 2022.</p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  <script src="/js/nav.js"></script>
+</html>

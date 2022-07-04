@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An open-source database application that is quite popular and helps store structured data in an accessible and valuable manner is known as MySQL. However, problems in performance with large data applications may appear. That’s why optimization of MySQL database is important." />
+    <title>Jamstack | How to Optimize MySQL Database Performance</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+  <div class="logo"><a href="http://202.56.164.148:5002/">Jamstack</a></div>
+  <nav>
+    <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+       
+      <li><a href="/topic/news">News</a></li>
+      
+      <li><a href="/topic/education">Education</a></li>
+      
+      <li><a href="/topic/lifestyles">Lifestyles</a></li>
+      
+      <li><a href="/topic/technology">Technology</a></li>
+      
+      <li><a href="/topic/sports">Sports</a></li>
+      
+    </ul>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
+      <span class="sr-only">Menu</span>
+    </button>
+  </nav>
+</header>
+
+    <main>  
+<article>
+  <div class="article-hero__container">
+    <img
+      src="https://res.cloudinary.com/dyjp4hmcm/image/upload/v1653657741/database_query_v_U7_R_Dm_C_1361c56710_3013acfd38.jpg"
+      width="1920"
+      height="1280"
+      alt="How to Optimize MySQL Database Performance image"
+      class="article-hero__img"
+    />
+    <div class="article-hero__attr">
+      <h1 class="article-hero__title">How to Optimize MySQL Database Performance</h1>
+      <span class="article-hero__author">By Jason Adam Katzenstein</span>
+      <span class="article-hero__timestamp">Published on May 27, 2022</span>
+    </div>
+  </div>
+  <div class="article__content"><p>An open-source database application that is quite popular and helps store structured data in an accessible and valuable manner is known as MySQL. However, problems in performance with large data applications may appear. That’s why optimization of MySQL database is important.</p>
+<h2 id="balancing-the-hardware-resources">Balancing the hardware resources</h2>
+<p>MySQL performance tune can be optimized by balancing the hardware resources. For this, you have to follow these aspects-</p>
+<h2 id="storage">Storage</h2>
+<p>Storage should be evaluated. If you want to improve the performance, then up-gradation to SSD (solid-state drives) should be done from HDD (traditional hard disk drives). You can monitor the rates of your disk input and output by using special tools from sysstat packages such as SAR or IOTOP. It is better to upgrade to more and faster storage if disk usage is more than other resources usage.</p>
+<h2 id="processor">Processor</h2>
+<p>You can measure MySQL performance tuning and how fast your system will perform by considering processors. You can know the breakdown of how resources perform by using the Linux top command. Ensure the percentage and processes of MySQL processor. Upgradation is important if there’s a bottleneck in your CPU. It can be expensive to upgrade processors.</p>
+<h2 id="memory">Memory</h2>
+<p>MySQL database storage server can tell the amount of RAM in the database in your memory. You can improve the performance by adjusting the memory cache. Your system performance will be damaged adversely if your memory isn’t optimized or when you don’t have sufficient memory. You can upgrade if your server runs short of memory by adding more. Otherwise, it will result in data catching that can slow down performance.</p>
+<h2 id="dont-use-myisam-instead-use-innodb">Don’t use MyISAM, instead use InnoDB</h2>
+<p>MySQL database uses an old database-style previously called MyISAM, which is not an advanced database design and is less efficient. Instead, use InnoDB, which has advanced and modern features in-built optimization techniques. It keeps data in pages and makes use of a clustered index. It stores pages in physical blocks consecutively. Thus you can keep relevant data on your device. InnoDB moves a value to a new location if it’s too big for one page and then starts indexing the value. In this way, drive can take less time to access data.</p>
+<h2 id="using-the-latest-version-of-mysql">Using the latest version of MySQL</h2>
+<p>It is important to enquire MySQL version and update it to the latest version. This helps to enhance the performance. MySQL performance enhancement is better to use than configuration files and scripting files.</p>
+<h2 id="optimize-queries">Optimize queries</h2>
+<p>SQL queries have to be optimized. Your system operation will be affected if any rogue SQL query is present as it becomes pricy. To optimize queries, you should emphasize indexing. With the help of an index, data can be easily accessed in tables and stored in databases.</p>
+<h2 id="mysql-should-not-be-used-as-a-queue">MySQL should not be used as a queue</h2>
+<p>It is important to ensure that MySQL should not be used as a queue in case of consecutive operations. This may cause a slowing down system where the parallel running of operations may even occur. It will result in inefficient databases.</p>
+<h2 id="check-scalability-problems">Check scalability problems</h2>
+<p>Some systems do better scaling than others. In the case of serialized processes, scalability will be limited as more processes will be added, which will wait for others. You have to recognize scalability problems and avoid any cross-talk. It is recommended to unlock everything and also keep things parallel.</p>
+<h2 id="query-the-cache">Query the cache</h2>
+<p>MySQL query cache helps in improving the performance as data is allowed to be stored and readily accessible. When you store a query, and in the future, a similar query is received by the system, results will be returned faster. Thus, with the help of catching, you can increase MySQL cache optimization.</p>
+</div>
+</article>
+
+
+</main>
+    <footer>
+  <div class="footer__content">
+    <p>Jamstack</p>
+    <div class="footer__disclaimer">
+      <p>
+        This website was created only for research purposes to complete the researcher's (p.p. Reza Fauzi Zisiwa Duha) final project for the
+        Informatics study program at Immanuel Christian University. All information and sources, both articles and pictures on the website,
+        use free materials taken from third parties including&nbsp;
+        <a href="https://www.articlesfactory.com/">Articles Factory</a>,&nbsp; <a href="https://www.amazines.com/">Amazines</a>,&nbsp;
+        <a href="https://pixabay.com/">Pixabay</a>,&nbsp; <a href="https://www.pexels.com/">Pexels</a>&nbsp;and&nbsp;
+        <a href="https://unsplash.com/">Unsplash.</a>
+      </p>
+      <p>© Reza, 2022.</p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  <script src="/js/nav.js"></script>
+</html>

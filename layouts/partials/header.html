@@ -1,0 +1,14 @@
+<header>
+  <div class="logo"><a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></div>
+  <nav>
+    <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+      {{ $topics := getJSON "https://strapiblogdb.herokuapp.com/api/topics" }} {{ range $topics.data }}
+      <li><a href="/topic/{{ .attributes.slug }}">{{ .attributes.name }}</a></li>
+      {{ end }}
+    </ul>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Menu">
+      <span class="sr-only">Menu</span>
+    </button>
+  </nav>
+</header>

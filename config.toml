@@ -1,0 +1,6 @@
+baseURL = 'http://202.56.164.148:5002/'
+languageCode = 'en-us'
+title = 'Jamstack'
+
+[params]
+    description = 'Jamstack Website'
