@@ -6,6 +6,8 @@
     <a href="#">
       <img
         src="{{ .attributes.image.data.attributes.url }}"
+        width="{{ .attributes.image.data.attributes.width }}"
+        height="{{ .attributes.image.data.attributes.height }}"
         alt="{{ .attributes.title }} image"
       />
     </a>
@@ -37,6 +39,8 @@
         <a href="/article/{{ .attributes.slug }}" class="card-img__link">
           <img
             src="{{ .attributes.image.data.attributes.url }}"
+            width="{{ .attributes.image.data.attributes.width }}"
+            height="{{ .attributes.image.data.attributes.height }}"
             alt="image"
             class="card-article__img"
           />
