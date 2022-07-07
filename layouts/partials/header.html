@@ -1,5 +1,5 @@
 <header>
-  <div class="logo"><a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></div>
+  <div class="logo"><a href="{{ "" | absLangURL }}">Jamstack</a></div>
   <nav>
     <ul id="primary-navigation" data-visible="false" class="primary-navigation">
       {{ $topics := getJSON "https://strapiblogdb.herokuapp.com/api/topics" }} {{ range $topics.data }}
