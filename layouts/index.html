@@ -1,7 +1,8 @@
 {{ define "main" }}
 
 <div class="post-hero__container">
-  {{ $article := getJSON "https://strapiblogdb.herokuapp.com/api/articles?sort=id%3Adesc&populate=*" }} {{ range first 1 $article.data}}
+  {{ $article := getJSON "https://strapiblogdboptimized.herokuapp.com/api/articles?sort=id%3Adesc&populate=*" }} {{ range first 1
+  $article.data}}
   <div class="post-hero">
     <a href="#">
       <img
@@ -22,8 +23,8 @@
   {{ end }}
 </div>
 
-{{ $featuredTopic := getJSON "https://strapiblogdb.herokuapp.com/api/topics?populate[articles][populate]=*" }} {{ range $featuredTopic.data
-}}
+{{ $featuredTopic := getJSON "https://strapiblogdboptimized.herokuapp.com/api/topics?populate[articles][populate]=*" }} {{ range
+$featuredTopic.data }}
 <section class="featured-topic" data-topic="{{ .attributes.name }}">
   <div class="featured-topic__header">
     <div class="featured-topic__title">

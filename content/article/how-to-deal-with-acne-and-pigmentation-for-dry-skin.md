@@ -4,4 +4,4 @@ slug: "how-to-deal-with-acne-and-pigmentation-for-dry-skin"
 description: "Acne and pigmentation are welcomed by none. And for those with Dry skin, dealing with this could be no less than an unpleasant dream."
 ---
 
-{{< article data="https://strapiblogdb.herokuapp.com/api/articles?populate=*&filters[slug][$eq]=how-to-deal-with-acne-and-pigmentation-for-dry-skin" >}}
+{{< article data="https://strapiblogdboptimized.herokuapp.com/api/articles?populate=*&filters[slug][$eq]=how-to-deal-with-acne-and-pigmentation-for-dry-skin" >}}
