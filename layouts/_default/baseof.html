@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="{{ .Description | default .Site.Params.Description }}" />
     <title>Jamstack | {{ .Title }}</title>
-    {{ $style := resources.Get "/css/main.css" | minify }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $styles := resources.Get "css/main.css" | resources.Minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
     <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
   </head>
